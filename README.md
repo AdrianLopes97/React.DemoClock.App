@@ -1,54 +1,48 @@
-# React + TypeScript + Vite
+# React Demo Clock App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este é um projeto de demonstração de um aplicativo de relógio desenvolvido com React.
 
-Currently, two official plugins are available:
+Feita para uma atividade da faculdade CC - DESENVOLVIMENTO DE APLICAÇÕES ORIENTADA A COMPONENTES - AP1
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Funcionalidades
 
-## Expanding the ESLint configuration
+- Exibe a hora atual em tempo real.
+- Atualização automática do relógio a cada segundo.
+- Interface simples e responsiva.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Tecnologias Utilizadas
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+- **React**: Biblioteca JavaScript para construção de interfaces de usuário.
+- **CSS**: Estilização do aplicativo.
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## Como Executar o Projeto
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+1. Certifique-se de ter o [Node.js](https://nodejs.org/) instalado.
+2. Clone este repositório:
+  ```bash
+  git clone <URL_DO_REPOSITORIO>
+  ```
+3. Navegue até o diretório do projeto:
+  ```bash
+  cd React.DemoClock.App
+  ```
+4. Instale as dependências:
+  ```bash
+  npm install
+  ```
+5. Inicie o servidor de desenvolvimento:
+  ```bash
+  npm start
+  ```
+6. Acesse o aplicativo no navegador em `http://localhost:3000`.
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+## Estrutura do Projeto
+
+- `src/`: Contém os arquivos principais do aplicativo.
+  - `components/`: Componentes reutilizáveis do React.
+  - `App.js`: Componente principal do aplicativo.
+  - `index.js`: Ponto de entrada da aplicação.
+
+## Contribuição
+
+Contribuições são bem-vindas! Sinta-se à vontade para abrir issues ou enviar pull requests.
